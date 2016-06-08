@@ -6,7 +6,7 @@ export class App extends React.Component{
     return(
       <div className="app">
         <h2>Hello React World Table!</h2>
-        <DataTable></DataTable>
+        <DataTable records={this.props.records}></DataTable>
       </div>
     )
   }

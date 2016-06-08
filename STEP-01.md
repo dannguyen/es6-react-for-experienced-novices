@@ -148,6 +148,9 @@ render((<App />), document.getElementById('app'));
 
 Boilerplate
 
+Add styles https://facebook.github.io/react/tips/inline-styles.html
+
+
 ~~~html
 <!DOCTYPE html>
 <html>

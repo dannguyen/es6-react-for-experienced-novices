@@ -20,19 +20,16 @@ var config = {
             include: [
                 path.resolve(srcPath, "app")
             ],
-            // A regexp to test the require path. accepts either js or jsx
             test: /\.jsx?$/,
-            // The module to load. "babel" is short for "babel-loader"
             loader: 'babel-loader',
         }, {
+            include: [
+              path.resolve(srcPath, "stylesheets")
+            ],
             test: /\.css$/,
             loader: "style!css"
         }]
-    },
-
-    plugins: [
-      new webpack.NoErrorsPlugin()
-    ]
+    }
 
 };
 
