@@ -4,6 +4,9 @@ import React from 'react';
 import {render} from 'react-dom';
 import App from './app.jsx';
 
+require("../stylesheets/mystyles.css");
+
+
 const THE_RECORDS = [
   {
       name: 'Brian Kernighanxxx',

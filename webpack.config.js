@@ -24,10 +24,10 @@ var config = {
             loader: 'babel-loader',
         }, {
             include: [
-              path.resolve(srcPath, "stylesheets")
+                path.resolve(srcPath, "stylesheets")
             ],
             test: /\.css$/,
-            loader: "style!css"
+            loader: "style-loader!css-loader"
         }]
     }
 
