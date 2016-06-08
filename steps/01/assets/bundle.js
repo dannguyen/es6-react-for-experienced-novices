@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/assets/";
+/******/ 	__webpack_require__.p = "assets/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -29329,7 +29329,7 @@
 		}
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, "?http://DN0a2236ec.SUNet:8080/"))
+	/* WEBPACK VAR INJECTION */}.call(exports, "?http://127.0.0.1:8080/"))
 
 /***/ },
 /* 545 */
