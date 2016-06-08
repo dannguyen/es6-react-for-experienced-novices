@@ -27681,14 +27681,84 @@
 	        "div",
 	        { className: "app" },
 	        _react2.default.createElement(
-	          "h3",
+	          "h2",
 	          null,
-	          "This is the app element"
+	          "Hello React World!"
 	        ),
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	          "Hello, my name is ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://github.com/dannguyen" },
+	            "Dan Nguyen"
+	          ),
+	          " and this is my ",
+	          _react2.default.createElement(
+	            "strong",
+	            { color: "hotpink" },
+	            "first"
+	          ),
+	          " ",
+	          _react2.default.createElement(
+	            "strong",
+	            { style: { color: "hotpink" } },
+	            "webpage"
+	          ),
+	          " that I have built using the latest World Wide Web technologies of React and ES6 and HTML5."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "It took me just about 5 hours to create this page, which is rendered onto your computing device with ",
+	          _react2.default.createElement(
+	            "em",
+	            null,
+	            "just"
+	          ),
+	          " over 1.2 megabytes of computer code -- yes, you read that correctly: that's ",
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            "less"
+	          ),
+	          " than",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "http://www.wired.com/2016/04/average-webpage-now-size-original-doom/all/1" },
+	            "half the size of DOOM"
+	          ),
+	          "!",
+	          _react2.default.createElement("br", null),
+	          "Such is the ",
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            " power of the World Wide Web!"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "After a lifetime of mostly spaghetti jQuery and debugging via ",
+	          _react2.default.createElement(
+	            "code",
+	            null,
+	            "alert()"
+	          ),
+	          ", this is my exciting first step in a new journey of World Wide Web development!"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "You can view my notes and even copy all of my meticulous source code data at:",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://github.com/dannguyen/es6-react-for-experienced-novices" },
+	            "https://github.com/dannguyen/es6-react-for-experienced-novices"
+	          )
 	        )
 	      );
 	    }
