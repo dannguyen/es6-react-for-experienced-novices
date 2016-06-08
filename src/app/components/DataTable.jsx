@@ -1,19 +1,17 @@
 import React from 'react';
-
+import DatumRow from './DatumRow.jsx'
 
 export class DataTable extends React.Component{
   make_rows(){
-    var rows = ""
+    var rows = []
     this.props.records.forEach((item) => {
-      rows += `<tr>
-                  <td class="name">${item.name}</td>
-                  <td class="description">${item.description}</td>
-              </tr>`;
+      rows.push(<DatumRow key={item.name} datum={item} />)
     });
-    return {__html: rows};
+    return rows;
   }
 
   render(){
+    var rows = this.make_rows();
     return(
       <table>
         <thead>
@@ -22,7 +20,9 @@ export class DataTable extends React.Component{
             <th>Description</th>
           </tr>
         </thead>
-        <tbody dangerouslySetInnerHTML={this.make_rows()} />
+        <tbody>
+          {rows}
+        </tbody>
       </table>
     );
   }
