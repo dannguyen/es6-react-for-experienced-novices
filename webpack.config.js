@@ -13,7 +13,7 @@ var config = {
         // entry: './src/app/index.js',
         path: path.resolve(__dirname, "build/assets"),
         filename: "bundle.js",
-        publicPath: '/assets/'
+        publicPath: 'assets/'
     }, //...
     module: {
         loaders: [{
