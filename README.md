@@ -26,6 +26,13 @@ Rebuilding the canonical React tutorial in ES6 because I don't even know regular
 </a>
 
 
+### Step 2: Adding data via props and embedding styles
+
+[Notes](notes/02.md)  
+
+[Site](http://dannguyen.github.io/es6-react-for-experienced-novices/steps/02/)
+
+[Source](https://github.com/dannguyen/es6-react-for-experienced-novices/tree/v02)
 
 
 
