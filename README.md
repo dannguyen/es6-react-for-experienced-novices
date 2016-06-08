@@ -10,6 +10,7 @@ Rebuilding the canonical React tutorial in ES6 because I don't even know regular
 
 [Site](http://dannguyen.github.io/es6-react-for-experienced-novices/steps/01/)
 
+[Source](https://github.com/dannguyen/es6-react-for-experienced-novices/tree/v01)
 
 - Instantiate a new packaged NPM project.
 - Install development dependencies of React, webpack, and Babel.
@@ -41,7 +42,7 @@ Rebuilding the canonical React tutorial in ES6 because I don't even know regular
 
 - https://github.com/addyosmani/es6-equivalents-in-es5
 - https://facebook.github.io/react/docs/jsx-gotchas.html
-
+- http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack/
 
 ## Alternatives
 

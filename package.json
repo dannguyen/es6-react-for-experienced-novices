@@ -1,49 +1,44 @@
 {
-    "name": "es6-react-for-experienced-novices",
-    "author": "Dan Nguyen and Zucky",
-    "description": "Just practicing react es6 and webpack",
-    "homepage": "https://github.com/dannguyen/es6-react-for-experienced-novices#readme",
-
-    "scripts": {
-        "start": "webpack-dev-server --hot --inline --content-base src & open http://127.0.0.1:8080",
-        "build": "npm run clean & npm run copy & webpack --progress --colors",
-        "clean": "rm -r build/*",
-        "copy": "copyfiles -f ./src/index.html ./build"
-    },
-
-    "devDependencies": {
-        "babel-core": "^6.9.1",
-        "babel-loader": "^6.2.4",
-        "babel-plugin-transform-runtime": "^6.9.0",
-        "babel-polyfill": "^6.9.1",
-        "babel-preset-es2015": "^6.9.0",
-        "babel-preset-react": "^6.5.0",
-        "babel-runtime": "^6.9.2",
-        "copyfiles": "^0.2.1",
-        "webpack": "^1.13.1",
-        "webpack-dev-server": "^1.14.1"
-    },
-    "dependencies": {
-        "jquery": "^2.2.4",
-        "react": "^0.14.8",
-        "react-dom": "^0.14.8"
-    },
-
-
-    "main": "",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/dannguyen/es6-react-for-experienced-novices.git"
-    },
-    "keywords": [
-        "react",
-        "tutorial",
-        "babysteps"
-    ],
-    "bugs": {
-        "url": "https://github.com/dannguyen/es6-react-for-experienced-novices/issues"
-    },
-    "license": "MIT",
-    "version": "1.0.0"
-
+  "name": "es6-react-for-experienced-novices",
+  "author": "Dan Nguyen and Zucky",
+  "description": "Just practicing react es6 and webpack",
+  "homepage": "https://github.com/dannguyen/es6-react-for-experienced-novices#readme",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --content-base src & open http://127.0.0.1:8080",
+    "build": "npm run clean & npm run copy & webpack --progress --colors",
+    "clean": "rm -r build/*",
+    "copy": "copyfiles -f ./src/index.html ./build"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-runtime": "^6.9.2",
+    "copyfiles": "^0.2.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  },
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannguyen/es6-react-for-experienced-novices.git"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "babysteps"
+  ],
+  "bugs": {
+    "url": "https://github.com/dannguyen/es6-react-for-experienced-novices/issues"
+  },
+  "license": "MIT",
+  "version": "1.0.0"
 }
