@@ -203,6 +203,17 @@ Attempted immediate load of page:
 Running built version on a remote server or something that is _not_ 127.0.0.1:
 
 
+      Failed to load resource: net::ERR_CONNECTION_REFUSED
+      bundle.js:29374 [WDS] Disconnected!sock.onclose @ bundle.js:29374
+      bundle.js:32849 GET http://127.0.0.1:8080/sockjs-node/info?t=1465363999061 net::ERR_CONNECTION_REFUSEDAbstractXHRObject._start @ bundle.js:32849(anonymous function) @ bundle.js:32738
+      bundle.js:29374 [WDS] Disconnected!sock.onclose @ bundle.js:29374EventTarget.dispatchEvent @ bundle.js:32273(anonymous function) @ bundle.js:35455
+      bundle.js:32849 GET http://127.0.0.1:8080/sockjs-node/info?t=1465364001080 net::ERR_CONNECTION_REFUSEDAbstractXHRObject._start @ bundle.js:32849(anonymous function) @ bundle.js:32738
+      bundle.js:29374 [WDS] Disconnected!sock.onclose @ bundle.js:29374EventTarget.dispatchEvent @ bundle.js:32273(anonymous function) @ bundle.js:35455
+      bundle.js:32849 GET http://127.0.0.1:8080/sockjs-node/info?t=1465364003103 net::ERR_CONNECTION_REFUSEDAbstractXHRObject._start @ bundle.js:32849(anonymous function) @ bundle.js:32738
+      bundle.js:29374 [WDS] Disconnected!sock.onclose @ bundle.js:29374EventTarget.dispatchEvent @ bundle.js:32273(anonymous function) @ bundle.js:35455
+      bundle.js:32849 GET http://127.0.0.1:8080/sockjs-node/info?t=1465364005122 net::ERR_CONNECTION_REFUSEDAbstractXHRObject._start @ bundle.js:32849(anonymous function) @ bundle.js:32738
+      bundle.js:29374 [WDS] Disconnected!
+
 
 ## Build process
 

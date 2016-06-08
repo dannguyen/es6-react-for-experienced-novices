@@ -20,7 +20,9 @@ Rebuilding the canonical React tutorial in ES6 because I don't even know regular
 - Configure the build parameters to create a standalone page with `build.js`
 
 
-<a href="pagematter/images/01.png"><img src="pagematter/images/01.png" alt="The first site"></a>
+<a href="http://dannguyen.github.io/es6-react-for-experienced-novices/steps/01/">
+  <img src="pagematter/images/01.png" alt="The first site">
+</a>
 
 
 
