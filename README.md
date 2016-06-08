@@ -6,7 +6,7 @@ Rebuilding the canonical React tutorial in ES6 because I don't even know regular
 
 ### Step 1: Hello React!
 
-[Notes](STEP-01.md)  
+[Notes](notes/01.md)  
 
 [Site](http://dannguyen.github.io/es6-react-for-experienced-novices/steps/01/)
 
