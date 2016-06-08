@@ -14,6 +14,8 @@ Rebuilding the canonical React tutorial in ES6 because I don't even know regular
 
 [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
 
+- https://github.com/addyosmani/es6-equivalents-in-es5
+- 
 
 
 ## Alternatives
