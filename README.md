@@ -1,10 +1,30 @@
-# thinking-in-react-es6
+# The Experienced Novice's Guide to ES6, React, and Modern JavaScript Development
 
 
 Rebuilding the canonical React tutorial in ES6 because I don't even know regular JavaScript anyways so whatever
 
 
-- [Step 1](STEP-01.md) - Create a new project, install webpack, react, babel, and other dependencies, get a basic hello world React App up with ES6.
+### Step 1: Hello React!
+
+[Notes](STEP-01.md)  
+
+[Site](http://dannguyen.github.io/es6-react-for-experienced-novices/steps/01/)
+
+
+- Instantiate a new packaged NPM project.
+- Install development dependencies of React, webpack, and Babel.
+- Create configurations for webpack and Babel.
+- Create scripts for `npm run`
+- Write a Hello World React app using ES6.
+- Configure webpack-dev-server and test locally.
+- Configure the build parameters to create a standalone page with `build.js`
+
+
+<a href="pagematter/images/01.png"><img src="pagematter/images/01.png" alt="The first site"></a>
+
+
+
+
 
 
 ## Tutorials to rebuild
@@ -14,8 +34,11 @@ Rebuilding the canonical React tutorial in ES6 because I don't even know regular
 
 [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
 
+
+## References
+
 - https://github.com/addyosmani/es6-equivalents-in-es5
-- 
+- https://facebook.github.io/react/docs/jsx-gotchas.html
 
 
 ## Alternatives

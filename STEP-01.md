@@ -1,4 +1,15 @@
 
+# Upgrading node and npm
+
+
+
+https://docs.npmjs.com/getting-started/installing-node
+
+~~~sh
+brew upgrade node
+npm install npm -g
+~~~
+
 
 ## Initialize npm project
 
@@ -152,4 +163,66 @@ Boilerplate
     <script src="bundle.js"></script>
   </body>
 </html>
+~~~
+
+
+# Adding to the scripts in Packages JSON
+
+
+
+## Errors to fix
+
+
+        bundle.js:17046 Uncaught Invariant Violation: The `style` prop expects a mapping from style properties to values, not a string. For example, style={{marginRight: spacing + 'em'}} when using JSX. This DOM node was rendered by `App`
+
+
+
+
+## Errors left unfixed
+
+
+Attempted immediate load of page:
+
+        $ npm start
+
+        Dans-iMac:es6-react-exnovices dmac$ events.js:160
+              throw er; // Unhandled 'error' event
+              ^
+
+        Error: listen EADDRINUSE 127.0.0.1:8080
+            at Object.exports._errnoException (util.js:1007:11)
+            at exports._exceptionWithHostPort (util.js:1030:20)
+            at Server._listen2 (net.js:1253:14)
+            at listen (net.js:1289:10)
+            at net.js:1399:9
+            at GetAddrInfoReqWrap.asyncCallback [as callback] (dns.js:65:16)
+            at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:84:10)
+
+
+
+Running built version on a remote server or something that is _not_ 127.0.0.1:
+
+
+
+## Build process
+
+
+~~~
+> es6-react-for-experienced-novices@1.0.0 build /Users/dmac/Dropbox/projes/es6-react-exnovices
+> npm run clean & npm run copy & webpack --progress --colors
+
+
+> es6-react-for-experienced-novices@1.0.0 clean /Users/dmac/Dropbox/projes/es6-react-exnovices
+> rm -r build/
+
+
+> es6-react-for-experienced-novices@1.0.0 copy /Users/dmac/Dropbox/projes/es6-react-exnovices
+> copyfiles -f ./src/index.html ./build
+
+Version: webpack 1.13.1
+Time: 2347ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  1.21 MB       0  [emitted]  main
+   [0] multi main 52 bytes {0} [built]
+    + 615 hidden modules
 ~~~
