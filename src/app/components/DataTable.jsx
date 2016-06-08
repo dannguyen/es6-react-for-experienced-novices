@@ -3,23 +3,8 @@ import React from 'react';
 
 export class DataTable extends React.Component{
   make_rows(){
-    var data = [
-      {
-        name: 'Brian Kernighan',
-        description: "Hello world"
-      },
-      {
-         name: 'Titanic',
-         description: "A big boat"
-      },
-      {
-        name: 'Ruby',
-        description: 'A language and also a gem'
-      }
-    ];
-
     var rows = ""
-    data.forEach((item) => {
+    this.props.records.forEach((item) => {
       rows += `<tr>
                   <td class="name">${item.name}</td>
                   <td class="description">${item.description}</td>

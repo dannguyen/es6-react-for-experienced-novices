@@ -9,7 +9,7 @@ require("../stylesheets/mystyles.css");
 
 const THE_RECORDS = [
   {
-      name: 'Brian Kernighanxxx',
+      name: 'Brian Kernighan',
       description: "Hello world"
   },
   {
@@ -19,6 +19,10 @@ const THE_RECORDS = [
   {
     name: 'Ruby',
     description: 'A language and also a gem'
+  },
+  {
+    name: 'Ada',
+    description: 'Short for "Adelle"'
   }
 ]
 

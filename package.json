@@ -5,7 +5,7 @@
   "homepage": "https://github.com/dannguyen/es6-react-for-experienced-novices#readme",
   "scripts": {
     "start": "webpack-dev-server --hot --inline --content-base src & open http://127.0.0.1:8080",
-    "build": "npm run clean & npm run copy & webpack --progress --colors",
+    "build": "npm run clean; npm run copy & webpack --progress --colors",
     "clean": "rm -r build/*",
     "copy": "copyfiles -f ./src/index.html ./src/stylesheets ./build"
   },
