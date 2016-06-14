@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 import React from 'react';
-import DataTable from './components/DataTable.jsx'
+import FilterableTable from './components/FilterableTable.jsx'
 
 export class App extends React.Component{
 
@@ -12,6 +12,7 @@ export class App extends React.Component{
 
   fetchData(){
     $.get(this.props.dataUrl, (results) => {
+      console.log(results.items.length);
       this.setState({records: results.items})
     })
   }
@@ -23,8 +24,8 @@ export class App extends React.Component{
   render(){
     return(
       <div className="app">
-        <h2>Hello React World Table!</h2>
-        <DataTable records={this.state.records}></DataTable>
+        <h2>Hello React Filterable Table!</h2>
+        <FilterableTable records={this.state.records}></FilterableTable>
       </div>
     )
   }

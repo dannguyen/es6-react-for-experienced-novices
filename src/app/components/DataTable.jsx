@@ -5,7 +5,10 @@ export class DataTable extends React.Component{
   make_rows(){
     var rows = []
     this.props.records.forEach((item) => {
-      rows.push(<DatumRow key={item.name} datum={item} />)
+      let ftxt = (item.name + ' ' + item.description).toLowerCase();
+      if(ftxt.includes(this.props.filterText.toLowerCase())){
+        rows.push(<DatumRow key={item.name} datum={item} />)
+      }
     });
     return rows;
   }
