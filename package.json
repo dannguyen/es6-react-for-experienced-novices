@@ -4,10 +4,10 @@
   "description": "Just practicing react es6 and webpack",
   "homepage": "https://github.com/dannguyen/es6-react-for-experienced-novices#readme",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --content-base src & open http://127.0.0.1:8080",
+    "start": "node server.js",
     "build": "npm run clean; npm run copy & webpack --progress --colors",
     "clean": "rm -r build/*",
-    "copy": "copyfiles -f ./src/index.html ./build && copyfiles -u 1 ./src/static/* ./build"
+    "copy": "copyfiles -f ./src/index.html ./build & copyfiles -u 1 ./src/static/* ./build"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",
@@ -18,11 +18,11 @@
     "babel-preset-react": "^6.5.0",
     "babel-runtime": "^6.9.2",
     "bootstrap": "^4.0.0-alpha.2",
-    "bootstrap-sass": "^3.3.6",
     "copyfiles": "^0.2.1",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "node-sass": "^3.7.0",
+    "open": "0.0.5",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
