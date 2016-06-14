@@ -1,0 +1,5 @@
+.data-table{
+  @extend .table;
+  @extend .table-bordered;
+  @extend .table-sm; 
+}

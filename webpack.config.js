@@ -9,7 +9,7 @@ var config = {
         "babel-polyfill",
         "./src/app/index.js",
         'webpack-dev-server/client?http://127.0.0.1:8080/',
-        "./src/stylesheets/mystyles.css"
+        "./src/stylesheets/styles.scss"
     ],
     output: {
         // entry: './src/app/index.js',
@@ -28,12 +28,12 @@ var config = {
             include: [
                 path.resolve(srcPath, "stylesheets")
             ],
-            test: /\.css$/,
-            loader: ExtractTextPlugin.extract("style", "css")
+            test: /\.scss$/,
+            loader: ExtractTextPlugin.extract("style", "css!sass")
         }]
     },
     plugins: [
-        new ExtractTextPlugin("main.css")
+        new ExtractTextPlugin("styles.css")
     ]
 };
 module.exports = config;

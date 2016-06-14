@@ -13,14 +13,13 @@ export class DataTable extends React.Component{
   render(){
     var rows = this.make_rows();
     return(
-      <table>
+      <table className="data-table">
         <thead>
           <tr>
             <th>Name</th>
             <th>Description</th>
             <th>Stars</th>
             <th>Issues</th>
-
           </tr>
         </thead>
         <tbody>
