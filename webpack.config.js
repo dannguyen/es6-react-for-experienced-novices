@@ -1,13 +1,15 @@
 var path = require("path");
 
 var srcPath = path.join(__dirname, 'src');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var config = {
     // context: path.join(__dirname, './src'),
     entry: [
         "babel-polyfill",
         "./src/app/index.js",
-        'webpack-dev-server/client?http://127.0.0.1:8080/'
+        'webpack-dev-server/client?http://127.0.0.1:8080/',
+        "./src/stylesheets/mystyles.css"
     ],
     output: {
         // entry: './src/app/index.js',
@@ -27,10 +29,11 @@ var config = {
                 path.resolve(srcPath, "stylesheets")
             ],
             test: /\.css$/,
-            loader: "style-loader!css-loader"
+            loader: ExtractTextPlugin.extract("style", "css")
         }]
-    }
-
+    },
+    plugins: [
+        new ExtractTextPlugin("main.css")
+    ]
 };
-
 module.exports = config;

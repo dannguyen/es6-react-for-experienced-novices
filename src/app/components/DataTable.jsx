@@ -18,6 +18,9 @@ export class DataTable extends React.Component{
           <tr>
             <th>Name</th>
             <th>Description</th>
+            <th>Stars</th>
+            <th>Issues</th>
+
           </tr>
         </thead>
         <tbody>
