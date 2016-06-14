@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --hot --inline --content-base src & open http://127.0.0.1:8080",
     "build": "npm run clean; npm run copy & webpack --progress --colors",
     "clean": "rm -r build/*",
-    "copy": "copyfiles -f ./src/index.html ./src/stylesheets ./build"
+    "copy": "copyfiles -f ./src/index.html ./build && copyfiles -u 1 ./src/static/* ./build"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",

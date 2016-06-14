@@ -50,6 +50,8 @@ Rebuilding the canonical React tutorial in ES6 because I don't even know regular
 - https://github.com/addyosmani/es6-equivalents-in-es5
 - https://facebook.github.io/react/docs/jsx-gotchas.html
 - http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack/
+- https://medium.com/@housecor/browserify-vs-webpack-b3d7ca08a0a9#.jej78m5p8
+
 
 ## Alternatives
 
