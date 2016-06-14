@@ -10,7 +10,6 @@ const config = {
     entry: [
         "babel-polyfill",
         "./src/app/index.js",
-        'webpack-dev-server/client?' + 'http://127.0.0.1:' + defaultSettings.port + '/',
         "./src/stylesheets/styles.scss"
     ],
     output: {

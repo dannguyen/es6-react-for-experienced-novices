@@ -8,6 +8,7 @@ const defaultSettings = {port: 8080};
 const open = require('open');
 const port_number = 8080;
 let target_entry = 'http://localhost:' + defaultSettings.port + '/';
+config.entry.unshift("webpack-dev-server/client?" + target_entry);
 
 
 new WebpackDevServer(webpack(config), {contentBase: 'src', hot: true, stats: { colors: true }, publicPath: '/assets/'})
