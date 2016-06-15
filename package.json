@@ -7,7 +7,7 @@
     "start": "node server.js",
     "build": "npm run clean; npm run copy & webpack --progress --colors",
     "clean": "rm -r build/*",
-    "copy": "copyfiles -f ./src/index.html ./build & copyfiles -u 1 ./src/static/* ./build"
+    "copy": "copyfiles -f ./src/index.html ./build"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",
