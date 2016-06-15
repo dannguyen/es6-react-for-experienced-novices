@@ -4,6 +4,8 @@
     <title>A filterable datatable - ES6 and React fun</title>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="shortcut icon" href="/static/favicon.ico"/>
+
   </head>
   <body>
 
@@ -13,5 +15,12 @@
     </div>
 
     <script type="text/javascript" src="assets/bundle.js"></script>
+
+    <script type="text/javascript">
+      // var targeturl = "https://api.github.com/search/repositories?q=language:Python&sort=stars&order=desc";
+      var targeturl = undefined;
+      ReactFilterTable("app", targeturl);
+    </script>
+
   </body>
 </html>

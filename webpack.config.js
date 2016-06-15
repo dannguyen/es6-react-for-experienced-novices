@@ -9,14 +9,15 @@ const config = {
     // context: path.join(__dirname, './src'),
     entry: [
         "babel-polyfill",
-        "./src/app/index.js",
-        "./src/stylesheets/styles.scss"
+        "./src/app/index.js"
     ],
     output: {
         // entry: './src/app/index.js',
         path: path.resolve(__dirname, "build/assets"),
         filename: "bundle.js",
-        publicPath: '/assets/'
+        publicPath: '/assets/',
+        library: "ReactFilterTable",
+        libraryTarget: 'var'
     }, //...
     module: {
         loaders: [{
@@ -31,7 +32,14 @@ const config = {
             ],
             test: /\.scss$/,
             loader: ExtractTextPlugin.extract("style", "css!sass")
-        }]
+        },
+        {
+            include: [
+                path.resolve(srcPath, "static")
+            ],
+            loader: 'file?name=[path][name].[ext]&context=./src'
+        }
+      ]
     },
     plugins: [
         new ExtractTextPlugin("styles.css")
